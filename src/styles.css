@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box; 
+  }
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  /* Navbar */
+  .nav-container {
+    background-color: rgb(184, 205, 244);
+    width: 15vw;
+  }
+
+  .col-1 {
+    flex: 1;
+    height: 100vh;
+    box-shadow: rgb(106, 120, 147) 9.91px 9.91px 15px inset, 
+    rgb(146, 158, 181) -9.91px -9.91px 15px inset;
+    background-color: rgb(116, 132, 162);
+    border-radius: 10px;
+    /* box-shadow: rgb(106, 120, 147) 9.91px 9.91px 15px inset, 
+    rgb(126, 144, 177) -9.91px -9.91px 15px inset;
+    background-color: rgb(116, 132, 162); */
+  }
+
+  /* Col-2 Covers the Header, Footer, Article and Aside */
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 3;
+    min-height: 100vh;
+    border-radius: 10px;
+  }
+  .content > aside {
+    flex: 1;
+    min-height: 100vh;
+    box-shadow: rgb(232, 210, 169) 9.91px 9.91px 15px inset, 
+    rgb(255, 252, 203) -9.91px -9.91px 15px inset;
+    background-color: rgb(255, 231, 186);
+    border-radius: 10px;
+  }
+
+  /* Header */
+  header {
+    height: 8vh;
+    box-shadow: rgb(232, 220, 169) 9.91px 9.91px 15px inset, 
+    rgb(255, 255, 203) -9.91px -9.91px 15px inset;
+    background-color: rgb(255, 242, 186);
+    border-radius: 10px;
+  }
+
+  /* Footer */
+  footer {
+    box-shadow: rgb(232, 220, 169) 9.91px 9.91px 15px inset, 
+    rgb(255, 255, 203) -9.91px -9.91px 15px inset;
+    background-color: rgb(255, 242, 186);
+    border-radius: 10px;
+  }
+
+  header, footer, article, nav, aside {
+    padding: 1em;
+    margin: 1em;
+  }
+
